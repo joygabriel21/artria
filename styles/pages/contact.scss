@@ -1,0 +1,155 @@
+.contact {
+  .container {
+    position: relative;
+  }
+  .hero {
+
+    position: relative;
+    background-image: linear-gradient(rgba(210, 52, 74, 0.75), rgba(210, 52, 74, 0.75)), url('/static/image/contact.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 730.65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .first-section {
+    h3, p {
+      color: white;
+    }
+
+  }
+
+  .second-section {
+    .panel {
+      position: relative;
+      max-width: 1080px;
+      margin: 0 auto;
+  
+      &__wrapper-first {
+        margin-left: 0px;
+        .panel__content {
+          background: white;
+          min-height: 590px;
+          border-radius: 5px;
+          padding: 48px 16px 48px 16px;
+        }
+
+        @include media(lg) {
+          margin-left: 60px;
+        }
+
+        @include media(md) {
+          .panel__content {
+            padding: 48px 85px 48px 45px;
+          }
+        }
+
+      }
+  
+      &__wrapper-second {
+        margin-left: 0px;
+        position: relative;
+        top: 36px;
+
+        h5 {
+          color: white;
+          margin-bottom: 24px;
+        }
+        .panel__content {
+          background: $primary50;
+          border-radius: 5px;
+          padding: 36px 16px 24px 16px;
+
+        }
+
+        .item__wrapper {
+          .item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+
+            img {
+              width: 30px;
+              margin-top: 8px;
+              margin-right: 36px;
+            }
+
+            p {
+              color: white;
+            }
+
+            a {
+              color: white;
+              display: block;
+              font-weight: 700;
+              font-style: italic;
+            }
+          }
+        }
+
+        @include media(lg) {
+          margin-left: -60px;
+          top: 125px;
+        }
+
+        @include media(md) {
+          .panel__content {
+            padding: 36px 36px 24px 36px;
+          }
+        }
+  
+      }
+    }
+
+    .select {
+      border-radius: 12px;
+      border: 1px solid #c8c8dc;
+      margin-bottom: 24px;
+
+      select {
+        margin-bottom: 0;
+        border: none;
+      }
+    }
+  }
+
+  .decoration {
+    width: 100%;
+    background: transparent url('/static/image/decoration.jpg') no-repeat center bottom;
+    height: 273px;
+    background-size: contain;
+    padding: 15px;
+    margin: 0px;
+  }
+
+  .third-section {
+    background-color: #cccccc;
+    position: relative;
+    min-height: 600px;
+
+    
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      min-height: 244px;
+      padding: 16px;
+      text-align: center;
+      background-color: white;
+      border-radius: 24px;
+
+      h5 {
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  
+}

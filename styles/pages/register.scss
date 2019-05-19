@@ -1,0 +1,26 @@
+
+.register {
+  
+  .register-desc {
+    text-align: center;
+    border-bottom: 1px solid $black10;
+
+    h4 {
+      font-weight: 700;
+      color: $primary50;
+    }
+  }
+
+  .tos {
+    input {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    a {
+      color: $primary50;
+      margin: 0 6px;
+    }
+  }
+}

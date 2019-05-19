@@ -1,0 +1,99 @@
+@import 'styles/variables.scss';
+
+.footer {
+  background-color: $black80;
+  h5 {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    color: $black10;
+  }
+  p {
+    line-height: 1.75;
+    font-size: 14px;
+    color: $black10;
+  }
+
+  .social-wrapper {
+    display: flex;
+    margin-top: 24px;
+
+    a {
+      width: initial ;
+      margin-right: 32px;
+      min-width: 24px;
+      img {
+        width: 24px;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+      background-color: white;
+      margin-bottom: 16px;
+    }
+  }
+
+  .app-download {
+    display: flex;
+    margin-top: 36px;
+    a {
+      width: initial ;
+      margin-right: 16px;
+
+      img {
+        width: 135px;
+      }
+    }
+
+    a:last-child {
+      img {
+        width: 151px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 24px 0;
+    width: 100%;
+    background-color: lighten(black, 20%);
+    font-size: 14px;
+
+    .left {
+      color: white;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      display: block;
+      width: initial;
+      margin-bottom: 8px;
+    }
+
+    @include media(md) {
+      .right {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+      }
+      a {
+        margin-bottom: 0px;
+      }
+    }
+  }
+    
+}

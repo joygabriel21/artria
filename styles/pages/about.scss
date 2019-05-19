@@ -1,0 +1,67 @@
+
+.about {
+  background-image: url('/static/icon/background-small.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  .hero {
+    position: relative;
+    background-image:  url('/static/image/about.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+
+    &__second-section {
+      background-image:  url('/static/image/about-2.jpg');
+      height: 60vh;
+
+      p {
+        color: initial;
+      }
+    }
+
+    h3 {
+      color: white;
+    }
+    button {
+      background-color: transparent;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $black10;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    @include media(md) {
+      margin-top: 128px;
+      margin-bottom: 128px;
+    }
+  }
+
+  .second-section {
+    h4 {
+      max-width: 700px;
+    }
+
+    b {
+      p {
+        color: $primary50;
+      }
+    }
+
+    .features__wrapper {
+
+      .features__title {
+        font-weight: 700;
+        color: $primary50;
+      }
+
+    }
+  }
+
+}

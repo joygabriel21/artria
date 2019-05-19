@@ -1,0 +1,65 @@
+@import 'styles/variables.scss';
+
+.modal--check-email {
+  .modal__body {
+    max-width: 500px;
+    height: 500px;
+    padding: 24px 16px;
+    justify-content: center;
+
+    @include media(sm) {
+      padding: 48px;
+    }
+
+    select {
+      font-size: 14px;
+    }
+
+    img {
+      width: 100px;
+      margin-bottom: 24px;
+
+      @include media(md) {
+        width: 100px;
+      }
+    }
+
+    .modal__ready {
+      max-width: 150px;
+    }
+
+    button {
+      margin-top: 36px;
+    }
+
+
+    .modal__link {
+      background-color: $black10;
+      border-radius: 5px;
+      padding: 16px;
+      word-break: break-all;
+      width: 100%;
+      font-size: 14px;
+
+      a {
+        color: $black60;
+      }
+    }
+  }
+
+  .modal__body--first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/image/onboarding.jpg');
+    background-size: cover;
+    background-position: center center;
+   
+   
+
+    h4 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+
+.landing-page {
+  background-image: url('/static/icon/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h4 {
+    font-weight: 700;
+    color: $black80;
+  }
+
+  .hero-header {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/image/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+
+    h4 {
+      color: white;
+    }
+  }
+  .hero {
+    
+    &__image {
+      position: relative;
+
+      .hero__person {
+        background-image: url('/static/image/landing-page-hero.jpg');
+        width: 100%;
+        padding-bottom: 100%;
+        max-width: 500px;
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        background-position: center top;
+        z-index: 2;
+
+        &--small {
+          max-width: 500px;
+          position: relative;
+          z-index: 2;
+          display: block;
+          margin: 0 auto;
+
+          // @include media(md) {
+          //   max-width: 300px;
+  
+          // }
+          // @include media(lg) {
+          //   max-width: 350px;
+          // }
+        }
+      }
+
+      .hero__decoration {
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        background-color: $lightgrey;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .hero__decor {
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 100%;
+        max-width: 600px; 
+
+        @include media(lg) {
+          width: 125%;
+          &--adjust {
+            left: 45%;
+          }
+        }
+      }
+
+
+    }
+
+    
+  }
+
+  .section, .section-header {
+    width: initial;
+
+  }
+
+  .section {
+    border-top: 1px solid $black10;
+
+    &.no-border {
+      border: none;
+    }
+
+    .row {
+      .col-md-6 {
+        // max-width: 480px;
+      }
+    }
+  }
+
+  .first-section, .second-section, .third-section {
+    img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+  }
+
+
+  .forth-section {
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      .content-item {
+        font-size: 14px;
+        color: $black60;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 36px;
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: contents;
+        }
+
+        .item-icon {
+          position: relative;
+          margin-bottom: 16px;
+          width: 100%;
+          padding-bottom: 100%;
+          border-radius: 10px;
+          background-color: $primary50;
+
+          img {
+            position: absolute;
+            top: 50%;
+            width: 80px;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+
+            @include media(sm) {
+              width: 90px;
+            }
+          }
+        }
+
+        &.content-disabled {
+          .item-icon {
+            background-color: $black40;
+            .disabled-text-wrapper {
+              width: 100%;
+              position: absolute;
+              text-align: center;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
+              padding: 8px 0;
+              background: rgba(0,0,0,.3);
+
+              p {
+                font-size: 14px;
+                color: white;
+                font-weight: 700;
+                margin-bottom: 0;
+              }
+            }
+            
+          }
+        }
+      }
+
+      @include media(lg) {
+        .content-item { 
+          .item-icon {
+            width: 75%;
+            padding-bottom: 75%;
+            border-radius: 10px;
+            background-color: $primary50;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .fifth-section {
+    img {
+      width: 100%;
+    }
+    h4 {
+      color: $primary50;
+    }
+  }
+
+  .sixth-section {
+    position: relative;
+    background-image: url('/static/image/landing-page-last.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 75vh;
+    
+  }
+
+}

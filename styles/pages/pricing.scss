@@ -1,0 +1,368 @@
+.pricing-page {
+  .hero {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('/static/image/pricing.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .price-banner {
+    background-image: url('/static/icon/background-small.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid $black10;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    padding: 24px 16px 36px 16px;
+    margin: 0 15px;
+    height: inherit;
+
+    h4 {
+      font-weight: 700;
+      color: $primary50;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .price-wrapper {
+      color: $primary50;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .currency {
+        font-size: 12px;
+        margin-right: 8px;
+      }
+
+      .amount {
+        font-size: 40px;
+        letter-spacing: .5px;
+      }
+      
+    }
+    .price-info {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .features {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 48px;
+      .feature-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .feature-icon {
+          margin-bottom: 8px;
+          width: 24px;
+          height: 24px;
+
+          @include media(sm) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .feature-text {
+          font-size: 13px;
+        }
+
+      }
+    }
+
+    @include media(sm) {
+      padding: 48px 72px 36px 72px;
+
+      .price-wrapper {
+        margin-bottom: 24px;
+
+        .currency {
+          font-size: 18px;
+          margin-right: 14px;
+        }
+
+        .amount {
+          font-size: 56px;
+          letter-spacing: .5px;
+        }
+        
+      }
+    }
+
+    @include media(md) {
+      padding: 48px 144px 36px 144px;
+
+      .price-wrapper {
+        margin-bottom: 24px;
+
+        .currency {
+          font-size: 24px;
+          margin-right: 18px;
+        }
+
+        .amount {
+          font-size: 64px;
+          letter-spacing: .5px;
+        }
+        
+      }
+    }
+
+    @include media(lg) {
+      padding: 48px 196px 36px 196px;
+
+      .price-wrapper {
+        .currency {
+          font-size: 24px;
+          margin-right: 21px;
+        }
+
+        .amount {
+          font-size: 72px;
+          letter-spacing: .5px;
+        }
+        
+      }
+    }
+  }
+
+  .second-section {
+    .header {
+      h4 {
+        color: $primary50;
+      }
+    }
+    .card__wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .card {
+        $c: card; 
+
+        background-color: $lightgrey;
+        width: 100%;
+        max-width: 350px;
+        padding-bottom: 36px;
+        border: 1px solid $black10;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0px 15px 36px 15px;
+        position: relative;
+
+
+        p {
+          text-align: center;
+          margin-top: 24px;
+        }
+
+        button {
+          margin-top: 24px;
+        }
+
+        &__header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+          width: 100%;
+          font-weight: 700;
+          color: white;
+        }
+
+        &__amount--yearly {
+          font-weight: 700;
+          letter-spacing: .75px;
+        }
+
+        &__currency--yearly {
+          font-weight: 700;
+          margin-top: 24px;
+        }
+
+        &__info--yearly {
+          font-size: 14px;
+        }
+
+        &__monthly {
+          margin-top: 10px;
+        }
+
+        &--green {
+          p {
+            margin-bottom: 39px;
+          }
+
+          h4 {
+            color: $black50;
+          }
+
+          .card__header {
+            background-color: #2FBC3F;
+            font-weight: 700;
+          }
+
+          .card__more-link{
+            color: #2FBC3F;
+            font-weight: 700;
+          }
+
+          button {
+            background-color: #2FBC3F;
+          }
+        }
+
+        &--green, &--yellow {
+          background-image: url('/static/icon/background-small.svg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &--yellow {
+
+          h4 {
+            color: orange;
+          }
+
+          .card__header {
+            background-color: orange;
+          }
+
+          .card__more-link{
+            color: orange;
+            font-weight: 700;
+          }
+
+          button {
+            background-color: orange;
+          }
+        }
+
+        &--disabled {
+
+          h4 {
+            color: $black40;
+          }
+
+          .card__header {
+            background-color: lighten(black, 20%);
+          }
+
+          .card__content {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .third-section {
+    .header {
+    
+      h4 {
+        color: $primary50;
+      }
+
+      p {
+        max-width: 530px;
+      }
+    }
+  }
+
+  .forth-section {
+    .card__wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+  
+      .card__background {
+        background-color: rgba(30,30,40,1);
+        width: 100%;
+        height: 25vh;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+        z-index: 1;
+      }
+  
+      p {
+        color: $white;
+        
+        b { 
+          color: $white;
+        }
+      }
+  
+      .card {
+        background-color: $primary50;
+        padding: 96px 0px;
+        background-image: url('/static/icon/background-small.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 2;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 30px;
+        color: white;
+  
+        .card__header {
+          color: white;
+        }
+  
+        .card__price {
+          .currency {
+            color: white;
+  
+          }
+          .amount {
+            color: white;
+            font-weight: 700;
+            font-size: 48px;
+  
+            @include media(md) {
+              font-size: 56px;
+            }
+          }
+        }
+  
+        .card__paymentMethod {
+          color: white;
+  
+        }
+  
+        .card__paymentMethod-info {
+          color: white;
+  
+        }
+  
+        button {
+          background-color: transparent;
+          border: 2px solid white;
+          
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  
+}

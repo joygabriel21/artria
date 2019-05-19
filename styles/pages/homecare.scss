@@ -1,0 +1,82 @@
+.homecare {
+  background-image: url('/static/icon/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero {
+    background-color: $primary50;
+    position: relative;
+    min-height: calc( 100vh - 80px);
+
+    position: relative;
+    background-image: url('/static/image/homecare-hero.png');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    
+
+    p, h4 {
+      color: white;
+    }
+    
+    .hero__image {
+      max-width: 350px;
+
+      @include media(sm) {
+      max-width: 375px;
+      }
+
+      @include media(md) {
+      max-width: 450px;
+      }
+    }
+
+    .app-download {
+      display: flex;
+      margin-top: 36px;
+      a {
+        width: initial ;
+        margin-right: 16px;
+  
+        img {
+          width: 135px;
+        }
+
+      }
+      a:last-child {
+        img {
+          width: 151px;
+        }
+      }
+    }
+    
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+
+  .section {
+    width: initial;
+    
+
+    img {
+      max-width: 300px;
+      width: 100%;
+
+      @include media(sm) {
+      max-width: 375px;
+      }
+
+      @include media(md) {
+      max-width: 425px;
+      }
+    }
+
+    h4 {
+      color: $primary50;
+    }
+  }
+
+}
