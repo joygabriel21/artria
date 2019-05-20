@@ -28,7 +28,7 @@ export default function pricing () {
               /Klinik/Bulan Bayar Tahunan
           </div>
             <div className="price-info">
-              IDR 267.000/Klinik/Bulan Bayar Bulanan
+              IDR 299.000/Klinik/Bulan Bayar Bulanan
           </div>
             <button className="btn btn--medium secondary mt-5 mw-1">
               <Link href="/register">
@@ -64,7 +64,7 @@ export default function pricing () {
               <div className="card__header">EHR Basic</div>
               <div className="card__content px-3 px-md-5 flex-column flex-center">
                 <div className="card__currency--yearly">IDR</div>
-                <h4 className="card__amount--yearly  h3-sm h2-md">149.000</h4>
+                <h4 className="card__amount--yearly  h3-sm h2-md">137.000</h4>
                 <div className="card__info--yearly">
                   /klinik/bulan <b>bayar tahunan</b>
                 </div>
@@ -97,7 +97,7 @@ export default function pricing () {
               <div className="card__header">BPJS</div>
               <div className="card__content px-3 px-md-5 flex-column flex-center">
                 <div className="card__currency--yearly">IDR</div>
-                <h4 className="card__amount--yearly h3-sm h2-md">449.000</h4>
+                <h4 className="card__amount--yearly h3-sm h2-md">452.000</h4>
                 <div className="card__info--yearly">
                   /klinik/bulan <b>bayar tahunan</b>
                 </div>
